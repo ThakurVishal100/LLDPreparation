@@ -3,3 +3,41 @@ SOLID
 1.  Single responsibility principle  [one function or component should one thing at a time ]
 
 2.  Open Closed Principle   [ a class should be open for extension but closed for modification ]
+
+
+abstract class
+it cannot be instantiated
+
+it share some common method that its shared subclass share
+
+it support two types of methods
+abstract   it do not have implementation
+non-abstract   it has implementation
+
+
+abstraction means we dont care how things are implemented
+always make sure that abstraction should be achieved
+
+
+liskov substitution principle  (LSP)
+    -  inheritance might not be the best way always for reusability.
+
+    - lsp says that subtypes must be substitutable for base types.
+
+    - Objects of child class should be as it is substitutable in variable of parent class.
+
+    - no change should be required in the codebase to accommodate a specific child class or you can say
+    child class should not need special treatment.
+
+    - child class should be exactly what the parent class expects.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+instead of depending on concrete class you should depend on abstraction
+
+high level modules should not depend on low level modules but instead depend on abstraction
+

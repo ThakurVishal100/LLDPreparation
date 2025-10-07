@@ -1,0 +1,13 @@
+an entity may be composed of a combination of behaviours
+it might not have all the possible behaviour
+
+if we violate this we will be forced to implement methods which are not associated to us
+
+
+ISP states that no childclass should be forced to exhibit a behaviour
+
+this happens because of bulky interfaces/abstract classes
+
+ISP is SRP for interfaces
+
+so try to segregate behaviour into different interfaces

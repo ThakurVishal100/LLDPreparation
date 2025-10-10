@@ -1,0 +1,38 @@
+#Situaton where too many attributes cab be problematic
+
+1. Creation of Objects
+2. Validate the properties before object creation
+
+
+
+#Problems
+
+1. we need to remember the order of arguments, making it hard to maintain.
+2. what if we want to have optional arguments , we will be force to manually give some default values to constructor
+
+
+#Benefits
+
+1. Easy to do validation
+
+
+# the problem of forcefully passing arguments can be solved by constructor overloading.
+    1. constructor explosion
+    2. a few constructor will cause issue.
+
+
+# SOlution is using getter and setter
+    # Benefits
+        1. Readable
+        2. Manageable
+        3. Extendible
+    # Issue
+        1. how to validate before object creation
+        2. Not work for immutable object creation
+
+-  just using setters will not work
+-  having too many arguments in the constructor will not work
+
+
+# what if we have all the arguments which are passed in constructor stored in a data structure.
+

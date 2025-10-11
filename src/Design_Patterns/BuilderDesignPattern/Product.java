@@ -54,6 +54,10 @@ public class Product {
         this.discount=b.discount;
     }
 
+    public static Builder getBuilder(){
+        return new Builder();
+    }
+
     public static class Builder{
         private String name;
         private String desc;
@@ -62,30 +66,42 @@ public class Product {
         private String brand;
         private String category;
 
-        public Builder(String name,int price){
+//        public Builder(String name,int price){
+//            this.name=name;
+//            this.price=price;
+//        }
+
+        public Builder setName(String name){
             this.name=name;
-            this.price=price;
+            return this;
         }
 
-        public Builder desc(String description){
+        public Builder setPrice(int price){
+            this.price=price;
+            return this;
+        }
+
+        public Builder setDesc(String description){
             this.desc=description;
             return this;
         }
 
-        public Builder discount(int dis){
+        public Builder setDiscount(int dis){
             this.discount=dis;
             return this;
         }
 
-        public Builder brand(String brand){
+        public Builder setBrand(String brand){
             this.brand=brand;
             return this;
         }
 
-        public Builder category(String cat){
+        public Builder setCategory(String cat){
             this.category=cat;
             return this;
         }
+
+
 
         public Product build() {
             if (price <= 0) {
